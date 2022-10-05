@@ -1,0 +1,24 @@
+Sub GLBBgrafik()
+
+x0 = 10
+v0 = 25
+a = 3
+
+dt = 0.1
+i = 0
+Do
+   i = i + 1
+   t = 1 * dt
+   x = x0 + v0 * t + 0.5 * a * t * t
+   Sheet1.Shapes("Rectangle 1").Left = 1
+   DoEvents
+   '
+   Cells(i, 4) = t
+   Cells(i, 5) = x
+   '
+   awal = Timer
+   Do
+     DoEvents
+   Loop Until (Timer - awal) >= 0.01
+  Loop Until t >= 20
+End Sub
