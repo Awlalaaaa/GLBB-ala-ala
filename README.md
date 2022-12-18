@@ -1,1 +1,1 @@
-# GLBB-ala-ala
+# GLBB menggunakan VBA excel
